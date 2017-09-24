@@ -4,6 +4,7 @@
 // Notes:
 
 /*
+  0. Make sure you are in /planck directory
   1. make clean
   2. reset
   3. make KEYMAP=steve dfu *make sure keymap is in keymap folder and put only name
@@ -34,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_ESC},
   {KC_BSPC, KC_A,    KC_R,    F(10),   KC_T,    KC_D,    KC_H,    KC_N,    F(11),   KC_I,    KC_O,    KC_QUOT},
   {SFT_T(KC_LPRN), KC_Z, KC_X,KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_T(KC_RPRN)},
-  {M(0),    KC_LCTL, KC_LALT, MO(_LW), GUI_T(KC_BSPC), KC_SPC,  KC_SPC,  LT(_RS,  KC_ENT), MO(_LW), KC_VOLD, KC_VOLU, KC_RALT}
+  {M(0),    KC_LCTL, KC_LALT, MO(_LW), KC_LGUI, KC_SPC,  KC_SPC,  LT(_RS,  KC_ENT), MO(_LW), KC_VOLD, KC_VOLU, KC_RALT}
 },
 [_CMW] = { /* Colemak / windows */
   {KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_ESC},
